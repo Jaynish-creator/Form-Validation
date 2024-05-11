@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("1-5000x3333.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color:black;
+}
+.form-area{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 50px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 5px;
+}
+.form-area label{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+.form-area input{
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+.btn{
+    padding: 10px 15px;
+    font-size: 17px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.btn-wrap input{
+    padding: 10px 15px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.error-email{
+    display: none;
+    width: 200px;
+    height: 14px;
+    border: 1px solid red;
+    color: red;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.error-phone{
+    display: none;
+    width: 202px;
+    height: 14px;
+    border: 1px solid red;
+    color: red;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+/* popup css */
+#popup{
+    display: none;
+}
+.popup-container {
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 500px;
+    max-height: 500px;
+}
+.form-content{
+    border: 1px solid black;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+div#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    text-align: center;
+}
+li{
+    list-style: none;
+    padding: 9px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-wrap{
+    padding-top: 20px;
+}
+.btn{
+    background-color: rgb(99 99 207);
+    border: 1px solid rgb(99 99 207);
+    color: white;
+}
+.font-light{
+    font-weight: 100;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="form">
+        <div class="container">
+            <div class="contact-form">
+                <form action="" name="form" class="form-area" id="registration">
+                    <h1 class="heading">Registration</h1>
+                    <label for="firstname">
+                        FirstName :
+                        <input type="text" id="firstname" placeholder="FirstName" value="">
+                    </label>
+                    <label for="lastname">
+                        LastName :
+                        <input type="text" id="lastname" placeholder="LastName" value="">
+                    </label>
+                    <label for="displayname">
+                        DisplayName :
+                        <input type="text" id="displayname" placeholder="Display name" value="" onfocus="displayName()" onblur="displayName()">
+                    </label>
+                    <label for="dateofbirth">
+                        Date of birth :
+                        <input type="date" id="dob" name="dateofbirth" placeholder="Date of birth" value="" max="2024-03-19">
+                        <div class="error-dob"></div>
+                    </label>
+                    <label for="email">
+                        Enter your Email :
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" value=""
+                            onchange="validEmail()">
+                        <div class="error-email">You have enter invalid email address</div>
+                    </label>
+                    <label for="phonenumber">
+                        Phone Number :
+                        <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number" value=""
+                            onchange="validPhone()">
+                        <div class="error-phone">You have enter invalid Phone Number</div>
+                    </label>
+                    <textarea name="textarea" id="summary" class="error" cols="30" rows="10" value=""
+                        placeholder="Summary"></textarea>
+
+                    <div class="btn-wrap">
+                        <a href="#" target="_self">
+                            <input class="btn" type="button" value="Registration" onclick="submitForm()">
+                        </a>
+                        <a href="#">
+                            <input class="btn" type="button" value="Reset" onclick="resetForm()">
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div id="popup" onclick="popupClose(event)">
+                <div class="popup-content">
+                    <div class="popup-container">
+                        <div class="form-content">
+                            <h1 class="heading">Your Details</h1>
+                            <div class="form-item">
+                                <ul>
+                                    <li>
+                                        FirstName : <span class="popup-first font-light"></span>
+                                    </li>
+                                    <li>
+                                        LastName : <span class="popup-last font-light"></span>
+                                    </li>
+                                    <li>
+                                        DisplayName : <span class="popup-display font-light"></span>
+                                    </li>
+                                    <li>
+                                        Dateof birth : <span class="popup-dob font-light"></span>
+                                    </li>
+                                    <li>
+                                        Email id : <span class="popup-mail font-light"></span>
+                                    </li>
+                                    <li>
+                                        Phone Number : <span class="popup-phone font-light"></span>
+                                    </li>
+                                    <li>
+                                        Summary : <span class="popup-summary font-light"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#">
+                                    <input class="btn" type="button" value="Cancle" onclick="cancleRegistration()">
+                                </a>
+                                <a href="#">
+                                    <input class="btn" type="button" value="Confirm" onclick="confirmRegistration()">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
